@@ -1,0 +1,145 @@
+Using Python create API endpoints for a chatbot development. User can create a new conversation and ask questions. Here are endpoints and their request types, Payload and Response.
+
+Use nosql database to store conversations and chat.
+
+Write API endponts and code for this application.
+
+
+
+1. Get Conversation List API: When there is no conversations for logged in user.
+Request URL: https://url/api/chatgpt/conversation/
+Request Method: GET
+Response: Blank:
+{"data":[]}
+
+
+
+2. Create New Conversation API: 
+Request URL:https://url/api/chatgpt/conversation/
+Request Method: POST
+{"text":"What is chatgpt","chatgpt":true}
+
+Response:
+{
+    "data": {
+        "conversation_id": 402,
+        "user_id": "user_2eDp4voI6k0iNsCl7ZzFNGrEAnz",
+        "chatgpt": true,
+        "subject": null
+    }
+}
+
+
+3. Get Conversations list API:
+URL: https://url/api/chatgpt/conversation/
+Request Method:GET
+Response: 
+{
+    "data": [
+        {
+            "conversation_id": 400,
+            "user_id": "user_2eDp4voI6k0iNsCl7ZzFNGrEAnz",
+            "chatgpt": true,
+            "subject": "Matrixly Is A Term That"
+        }
+    ]
+}
+
+
+4. GET CHAT hostory
+
+Request URL: https://url/api/chatgpt/400/conversation/chat/
+Request Method: GET
+
+Response:
+{
+    "data": [
+        {
+            "id": 1297,
+            "user_id": "user_2eDp4voI6k0iNsCl7ZzFNGrEAnz",
+            "text": "Who is elon musk",
+            "type": 1,
+            "created_at": "2024-03-26T10:33:56.571065Z",
+            "conversation_id": 401
+        },
+        {
+            "id": 1298,
+            "user_id": "user_2eDp4voI6k0iNsCl7ZzFNGrEAnz",
+            "text": "Elon Musk is a billionaire entrepreneur and CEO of multiple companies, including Tesla, SpaceX, Neuralink, and The Boring Company. He is known for his work in the electric vehicle industry, space exploration, and developing technologies for the future. Musk is also a proponent of renewable energy and has ambitious goals for colonizing Mars.",
+            "type": 2,
+            "created_at": "2024-03-26T10:33:56.579870Z",
+            "conversation_id": 401
+        }
+    ]
+}
+
+
+5. Ask Question against a conversation
+
+Request URL: https://url/api/chatgpt/402/conversation/chat/
+Request Method: POST
+
+Payload:
+{"text":"who owns chatgpt","type":1,"chatgptType":"chatgpt3"}
+
+
+{
+    "question": {
+        "id": 1303,
+        "user_id": "user_2eDp4voI6k0iNsCl7ZzFNGrEAnz",
+        "text": "who owns chatgpt",
+        "type": 1,
+        "created_at": "2024-03-26T10:41:23.827201Z",
+        "conversation_id": 402
+    },
+    "answer": {
+        "id": 1304,
+        "user_id": "user_2eDp4voI6k0iNsCl7ZzFNGrEAnz",
+        "text": "ChatGPT is owned by OpenAI, a research organization focused on artificial intelligence. OpenAI was founded in December 2015 and is dedicated to ensuring that artificial general intelligence (AGI) benefits all of humanity. The organization conducts research in various AI-related fields and develops tools and technologies like ChatGPT to advance the field of artificial intelligence.",
+        "type": 2,
+        "created_at": "2024-03-26T10:41:23.832687Z",
+        "conversation_id": 402
+    },
+    "conversation": {
+        "conversation_id": 402,
+        "user_id": "user_2eDp4voI6k0iNsCl7ZzFNGrEAnz",
+        "chatgpt": true,
+        "subject": "Chatgpt Is A Language Model"
+    }
+}
+
+4. Get Chat history:
+Request URL:
+https://url/api/chatgpt/401/conversation/chat/
+Request Method: POST
+
+data:
+
+{"text":"Who is elon musk","type":1,"chatgptType":"chatgpt3"}
+
+
+
+REsponse:
+{
+    "question": {
+        "id": 1297,
+        "user_id": "user_2eDp4voI6k0iNsCl7ZzFNGrEAnz",
+        "text": "Who is elon musk",
+        "type": 1,
+        "created_at": "2024-03-26T10:33:56.571065Z",
+        "conversation_id": 401
+    },
+    "answer": {
+        "id": 1298,
+        "user_id": "user_2eDp4voI6k0iNsCl7ZzFNGrEAnz",
+        "text": "Elon Musk is a billionaire entrepreneur and CEO of multiple companies, including Tesla, SpaceX, Neuralink, and The Boring Company. He is known for his work in the electric vehicle industry, space exploration, and developing technologies for the future. Musk is also a proponent of renewable energy and has ambitious goals for colonizing Mars.",
+        "type": 2,
+        "created_at": "2024-03-26T10:33:56.579870Z",
+        "conversation_id": 401
+    }
+}
+
+
+
+
+

@@ -1,0 +1,27 @@
+.call-mode {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  align-items: center;
+  gap: 1rem;
+}
+
+.call-mode .maintwil1-btn:hover{
+  background-color: #4c1d95;
+  color: #fff;
+}
+h4 {
+  color: rgb(35 12 76 / var(--tw-text-opacity));
+  font-size: large;
+  font-weight: bold;
+}
+.call-mode .maintwil1-btn {
+  background: #fff;
+  border: 1px solid #4c1d95;
+  color: #4c1d95;
+  padding: 2px 23px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease 0s !important;
+  text-transform: uppercase;
+}

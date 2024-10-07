@@ -1,0 +1,87 @@
+export const PlansDescription = [
+  {
+    id: 1,
+    planType: "free plan",
+    planPrice: "$0",
+    planBenefits: [
+      { lightText: "LLM - ", boldText: "GPT-3.5" },
+      { lightText: "Sharebots", boldText: "" },
+      {
+        lightText: "Sharebot file Size -",
+        boldText: " 25 MB",
+        smallText: "(5 pages per file)",
+      },
+      { lightText: "Characters per Chatbot -", boldText: "100,000" },
+      { lightText: "Number of Sharebots -", boldText: "Create 2, Save 2" },
+    ],
+    isPopular: false,
+  },
+  {
+    id: 2,
+    planType: "standard ",
+    planPrice: "$30/month",
+    planBenefits: [
+      {
+        lightText: "LLM",
+        boldText: "GPT-4",
+        smallText: "(GPT-3.5 after credit limit)",
+      },
+      { lightText: "Message Credit -", boldText: "9,000" },
+      { lightText: "Sharebots -", boldText: "" },
+      { lightText: "Document Analysis -", boldText: "" },
+      { lightText: "Knowledge Base Creation -", boldText: "" },
+      {
+        lightText: "Sharebot file Size -",
+        boldText: "250 MB",
+        smallText: "(25 pages per file)",
+      },
+      { lightText: "Characters per Chatbot -", boldText: "1,000,000" },
+      { lightText: "Number of Sharebots -", boldText: "Create 30, Save 30" },
+      { lightText: "White labelled Sharebots", boldText: "" },
+    ],
+    isPopular: false,
+  },
+  {
+    id: 3,
+    planType: "Premium",
+    planPrice: "$40/month",
+    planBenefits: [
+      // {lightText:}
+      {
+        lightText: "LLM -",
+        boldText: "GPT-4 ",
+        smallText: "(GPT-3.5 after credit limit)",
+      },
+      { lightText: "Message Credit -", boldText: "15,000" },
+      { lightText: "Sharebots", boldText: "" },
+      { lightText: "Document Analysis", boldText: "" },
+      { lightText: "Knowledge Base Creation", boldText: "" },
+      {
+        lightText: "Sharebot file Size - ",
+        boldText: "500 MB",
+        smallText: "(1000 pages per file)",
+      },
+      { lightText: "Characters per Chatbot -", boldText: "∞" },
+      { lightText: "Number of Sharebots -", boldText: "Create 50, Save 50" },
+      { lightText: "White labelled Sharebot", boldText: "" },
+    ],
+    isPopular: true,
+  },
+  {
+    id: 4,
+    planType: "Enterprise",
+    planPrice: "$ Custom",
+    planBenefits: [
+      { lightText: "LLM -", boldText: "GPT-4" },
+      { lightText: "Message Credit -", boldText: "Custom" },
+      { lightText: "Sharebots -", boldText: "" },
+      { lightText: "Document Analysis -", boldText: "" },
+      { lightText: "Knowledge Base Creation", boldText: "" },
+      { lightText: "Sharebot file Size -", boldText: "Custom" },
+      { lightText: "Characters per Chatbot -", boldText: "Custom" },
+      { lightText: "Number of Sharebots -", boldText: "Custom" },
+      { lightText: "White labelled Sharebots ", boldText: "" },
+    ],
+    isPopular: false,
+  },
+];

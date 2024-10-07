@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+	<title>files-svgrepo-com-svg</title>
+	<style>
+		.s0 { fill: #ffffff } 
+		.s1 { fill: none } 
+	</style>
+	<path id="Layer" fill-rule="evenodd" class="s0" d="m15 21h1v2h-13v-16h2v1h-1v14h11zm3-3h1v2h-13v-16h2v1h-1v14h11zm0.4-17l3.6 3.6v12.4h-13v-16zm2.6 5h-4v-4h-7v14h11zm0-1.3l-2.7-2.7h-0.3v3h3z"/>
+	<path id="Layer" fill-rule="evenodd" class="s1" d="m0 0h24v24h-24z"/>
+</svg>

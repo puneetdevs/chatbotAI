@@ -1,0 +1,18 @@
+User-agent: *
+Disallow: /dashboard
+Disallow: /agents
+Disallow: /VoiceLibrary
+Disallow: /CallLogs
+Disallow: /chat
+Disallow: /multiple
+Disallow: /aboutus
+Disallow: /pricing
+Disallow: /demo
+Disallow: /single
+Disallow: /sharebot
+Disallow: /agents/create
+Disallow: /agents/create/AgentDetails
+Disallow: /agents/create/PromptBuild
+Disallow: /agents/create/AdvancedSettings
+
+Sitemap: https://voagents.ai/sitemap.xml

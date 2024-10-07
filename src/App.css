@@ -1,0 +1,9 @@
+
+.custom-purple {
+    background-color: #7136be; 
+    transition: background-color 0.3s ease; 
+}
+.custom-purple:hover{
+    background-color: #28a745; 
+
+}

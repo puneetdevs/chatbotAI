@@ -1,0 +1,122 @@
+.multi-chat-history {
+	width: 300px;
+	background-color: var(--color-white);
+	border-right: 1px solid #e2e8f0;
+}
+
+.chat-history.multi-chat-history .new-chat-btn {
+	background-color: var(--color-white);
+	color: #0f172a;
+	border-color: #eaecf0;
+}
+
+.chat-history.multi-chat-history .new-chat-btn:hover {
+	background-color: #f97a09;
+	color: var(--color-white);
+}
+
+.chat-history.multi-chat-history .history-title {
+	color: #0f172a;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.chat-history.multi-chat-history .history-items li,
+.chat-history.multi-chat-history .history-items li a {
+	color: #0f172a;
+}
+
+.chat-history.multi-chat-history .history-items li:hover a,
+.chat-history.multi-chat-history .history-items li:hover {
+	/* color: var(--color-white); */
+	color: #0f172a;
+}
+
+.chat-history.multi-chat-history .clear-chat-btn {
+	/* border-top: 1px solid #4b5057; */
+	background-color: var(--color-white);
+	color: #0f172a;
+	left: 2px;
+	width: calc(100% - 32px);
+}
+
+.multi-chat-history .knowledge-btn {
+	width: 48px;
+	height: 48px;
+	padding: 5px;
+	background-color: #f2f2f2;
+	border-radius: 8px;
+	border: 1px solid #e2e8f0;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.multi-chat-history .knowledge-btn:active {
+	transform: scale(0.98);
+}
+
+.model-select.history-select {
+	width: 100% !important;
+	position: relative;
+}
+
+.model-select.history-select .icon {
+	position: absolute;
+	left: 10px;
+	top: 12px;
+}
+
+/* .model-select.history-select .css-art2ul-ValueContainer2,
+.model-select.history-select .css-13cymwt-control,
+.model-select.history-select .css-w9q2zk-Input2 {
+	padding-left: 30px !important;
+} */
+
+.css-art2ul-ValueContainer2{padding-left: 35px!important;}
+
+.multiple-doc-empty-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.multiple-doc-empty {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.multiple-doc-empty .create-knowledge-btn {
+	background-color: var(--zinc-800);
+	color: #fff;
+	border: 1px solid var(--zinc-800);
+	padding: 8px 16px;
+	border-radius: 8px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+}
+
+.multiple-doc-empty .create-knowledge-btn:hover {
+	background-color: #4f4f56;
+}
+
+.multiple-doc-empty .create-knowledge-btn:active {
+	transform: scale(0.98);
+}
+.workspaceTitle{
+	font-size: 16px;
+	font-weight: 600;
+	color: #0f172a;
+	text-align: center;
+}
+
+.chat-history.multi-chat-history .new-chat-btn.selected-button {
+	background-color: #4c1d95;
+	color: var(--color-white);
+}

@@ -1,0 +1,27 @@
+.text-zinc-800 {
+	color: var(--zinc-800);
+}
+
+.text-white {
+	color: var(--color-white);
+}
+
+.text-gray {
+	color: var(--color-gray);
+}
+
+.text-gray-100 {
+	color: var(--color-gray-100);
+}
+
+.text-black {
+	color: var(--color-black);
+}
+
+.bg-zinc-800 {
+	background-color: var(--zinc-800);
+}
+
+.text-blue-100 {
+	color: var(--blue-100) !important;
+}

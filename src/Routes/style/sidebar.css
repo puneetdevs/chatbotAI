@@ -1,0 +1,345 @@
+.layout-sidebar {
+  --width-sidebar: 240px;
+  width: var(--width-sidebar);
+  height: 100vh;
+  background-color: #220d2c;
+  padding: 22px 7.5px;
+  position: relative;
+  transition: width 0.3s ease-in-out;
+  border-right: none;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+.bottom_side_bar {
+  float: left;
+  padding: 0 0;
+  width: 100%;
+  padding-top: 20px;
+  margin-top: auto;
+  padding-bottom: 20px;
+}
+.bottom_side_bar .upgrade-box {
+  position: static;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.bottom_side_bar .user-profile {
+  position: static !important;
+  width: 100% !important;
+}
+
+.layout-sidebar.sm-sidebar {
+  --width-sidebar: 68px;
+  width: var(--width-sidebar);
+}
+
+.layout-sidebar .big-logo {
+  width: 90%;
+  height: 75px;
+}
+
+/* .layout-sidebar .sm-logo {
+	width: 45px;
+	height: 42px;
+} */
+
+.layout-sidebar .sm-logo img {
+  --size: 100%;
+  width: 40px;
+  height: var(--size);
+  object-fit: contain;
+}
+
+.layout-sidebar .big-logo img {
+  --size: 100%;
+  width: var(--size);
+  height: var(--size);
+  object-fit: contain;
+}
+
+.links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 48px;
+}
+
+.links li {
+  margin-bottom: 2px;
+}
+
+.links a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  gap: 14px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+/* .links a svg, */
+.links a svg path {
+  fill: #fff;
+}
+
+.links .file-icon svg,
+.links .file-icon svg path {
+  fill: var(--color-white);
+}
+
+.links a:hover {
+  background-color: #4c1d95;
+}
+
+.links a.active {
+  background-color: #4c1d95;
+  color: var(--color-white);
+}
+
+/* .links a.active svg, */
+.links a.active svg path {
+  fill: var(--color-white);
+}
+
+.links a:active {
+  transform: scale(0.98);
+}
+
+.layout-sidebar .user-profile,
+.mob-sidebar .user-profile {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  gap: 0;
+  left: 16px;
+  bottom: 20px;
+  padding-top: 14px;
+  width: calc(100% - 32px);
+  right: 16px;
+  justify-content: center;
+  /* border-top: 1px #E2E8F0 solid; */
+}
+
+/* .layout-sidebar .user-profile::before,
+.mob-sidebar .user-profile::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 5px;
+	width: 100%;
+	height: 1px;
+	background-color: var(--zinc-800);
+} */
+
+.user-profile .user-image {
+  --size: 40px;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+.user-subprofile {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #101a2d;
+  padding: 11px;
+  border-radius: 8px;
+  color: #fff;
+  gap: 5px;
+}
+.user-profile .user-image img {
+  --size: 100%;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.user-profile .user-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.user-profile .user-email {
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.user-profile .logout-icon {
+  display: inline-block;
+  --size: 30px;
+  width: var(--size);
+  height: var(--size);
+  min-width: var(--size);
+  min-height: var(--size);
+}
+
+.user-profile .logout-icon img {
+  --size: 100%;
+  width: var(--size);
+  height: var(--size);
+  object-fit: contain;
+}
+
+.sidebar-toggle {
+  position: absolute;
+  right: 0;
+  top: 44px;
+  font-size: 16px;
+  color: var(--blue-100);
+  cursor: pointer;
+}
+
+.sm-side-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.sm-side-nav .toggle-sidebar-btn {
+  width: 32px;
+  height: 32px;
+}
+
+.toggle-sidebar-btn img {
+  --size: 100%;
+  width: var(--size);
+  height: var(--size);
+  object-fit: contain;
+}
+
+.mob-sidebar.offcanvas.offcanvas-start {
+  width: 100%;
+}
+
+.sm-side-nav .logo,
+.mob-sidebar .logo {
+  width: 135px;
+  height: 32px;
+}
+
+.sm-side-nav .logo img,
+.mob-sidebar .logo img {
+  --size: 100%;
+  width: var(--size);
+  height: var(--size);
+  object-fit: contain;
+}
+.upgrade-box .upgrade-box-inner {
+  display: flex;
+  /* justify-content: space-around; */
+  justify-self: end;
+  align-items: center;
+  margin-top: 10px;
+}
+.upgrade-box {
+  background: #3f3f46;
+  padding: 20px 16px;
+  border-radius: 8px;
+  color: #fff;
+}
+.upgrade-box h3 {
+  font-weight: 600;
+  font-size: 14px;
+}
+.upgrade-box p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  margin-top: 7px;
+}
+.upgrade-box .btn-primary {
+  color: #000;
+  background-color: #fff;
+  border-color: #fff;
+  box-shadow: none;
+  font-size: 0.75rem;
+}
+.upgrade-box {
+  background: #3f3f46;
+  padding: 20px 16px;
+  border-radius: 8px;
+  color: #fff;
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  width: calc(100% - 32px);
+  bottom: 83px;
+}
+.layout-sidebar.sm-sidebar .upgrade-box {
+  display: none;
+}
+.layout-sidebar.sm-sidebar .user-subprofile {
+  justify-content: center;
+}
+.layout-sidebar.sm-sidebar .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.layout-sidebar.sm-sidebar .links a {
+  width: 50px;
+}
+.layout-sidebar.sm-sidebar .user-profile .user-image {
+  justify-content: center;
+}
+
+.layout-sidebar .sm-logo img {
+  display: inline-block;
+  margin: 0 auto;
+}
+.layout-sidebar .sm-logo {
+  text-align: center;
+  width: 100%;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .layout-sidebar {
+    width: 200px;
+  }
+  .layout-sidebar .big-logo {
+    width: 90%;
+    height: 75px;
+  }
+  .links a {
+    gap: 14px;
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 991px) {
+  .mob-sidebar.offcanvas {
+    background: #220d2c;
+  }
+  .offcanvas-header .btn-close {
+    background-color: #fff;
+    opacity: 1;
+    padding: 6px;
+  }
+  .sm-side-nav {
+    background: #220d2c;
+    padding: 12px 20px;
+  }
+  .sm-side-nav .toggle-sidebar-btn {
+    filter: brightness(0) invert(1);
+    width: 26px;
+    cursor: pointer;
+  }
+  .dashboard-container .dashboard-title {
+    line-height: 30px;
+    font-size: 24px;
+  }
+  .fs-16 {
+    font-size: 14px;
+  }
+}
